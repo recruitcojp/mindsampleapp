@@ -1,0 +1,270 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/txtConnected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:background="#FF0000"
+        android:text="@string/disconnected"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtSigQ"
+        android:layout_alignBottom="@+id/txtSigQ"
+        android:layout_marginRight="15dp"
+        android:layout_toLeftOf="@+id/txtSigQ"
+        android:padding="@dimen/padding_medium"
+        android:text="Signal Quality"
+        tools:context=".MainActivity" />
+
+    <TextView
+        android:id="@+id/txtSigQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:text="255" />
+
+    <TextView
+        android:id="@+id/txtESenseMeter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/esense_meters"
+        android:textColor="#00FFFF" />
+
+    <ImageView
+        android:id="@+id/imgMeditation"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignLeft="@+id/txtESenseMeter"
+        android:layout_below="@+id/txtESenseMeter"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ball_purple" />
+
+    <ImageView
+        android:id="@+id/imgAttention"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_alignLeft="@+id/txtESenseMeter"
+        android:layout_below="@+id/txtESenseMeter"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ball_orange" />
+
+    <ImageView
+        android:id="@+id/imgBlink"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_alignLeft="@+id/txtESenseMeter"
+        android:layout_below="@+id/txtESenseMeter"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ball_yello" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgMeditation"
+        android:layout_below="@+id/imgMeditation"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="46dp"
+        android:text="@string/meditation" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignLeft="@+id/imgAttention"
+        android:layout_marginLeft="-20dp"
+        android:text="@string/attention" />
+
+	<TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignLeft="@+id/imgBlink"
+        android:layout_marginLeft="-10dp"
+        android:text="@string/blink" />
+
+
+    <TextView
+        android:id="@+id/txtEegPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtESenseMeter"
+        android:layout_below="@+id/txtESenseMeter"
+        android:layout_marginTop="150dp"
+        android:text="@string/eeg_power"
+        android:textColor="#00FFFF" />
+
+    <ImageView
+        android:id="@+id/imgEEG01"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:layout_below="@+id/txtEegPower"
+        android:layout_marginLeft="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_aq_ds_m" />
+
+    <ImageView
+        android:id="@+id/imgEEG02"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/imgEEG01"
+        android:layout_below="@+id/imgEEG01"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_bl_ds_m" />
+
+    <ImageView
+        android:id="@+id/imgEEG03"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignLeft="@+id/imgEEG02"
+        android:layout_below="@+id/imgEEG02"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_br_ds_m" />
+
+    <ImageView
+        android:id="@+id/imgEEG04"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imgEEG03"
+        android:layout_alignLeft="@+id/imgEEG03"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_gr_ds_m" />
+
+    <ImageView
+        android:id="@+id/imgEEG05"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imgEEG04"
+        android:layout_alignLeft="@+id/imgEEG04"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_or_ds_m" />
+
+    <ImageView
+        android:id="@+id/imgEEG06"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imgEEG05"
+        android:layout_alignLeft="@+id/imgEEG05"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_pr_ds_m" />
+
+    <ImageView
+        android:id="@+id/imgEEG07"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imgEEG06"
+        android:layout_alignLeft="@+id/imgEEG06"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_rd_ds_m" />
+
+    <ImageView
+        android:id="@+id/imgEEG08"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/imgEEG07"
+        android:layout_alignLeft="@+id/imgEEG07"
+        android:scaleType="fitXY"
+        android:src="@drawable/b26_p24_ye_ds_m" />
+
+    <TextView
+        android:id="@+id/txtEEG01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG01"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg01_delta" />
+
+
+    <TextView
+        android:id="@+id/txtEEG02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG02"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg02_theta" />
+
+    <TextView
+        android:id="@+id/txtEEG03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG03"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg03_low_alpha" />
+
+    <TextView
+        android:id="@+id/txtEEG04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG04"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg04_high_alpha" />
+
+    <TextView
+        android:id="@+id/txtEEG05"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG05"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg05_low_beta" />
+
+    <TextView
+        android:id="@+id/txtEEG06"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG06"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg06_high_beta" />
+
+    <TextView
+        android:id="@+id/txtEEG07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG07"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg07_low_gamma" />
+
+    <TextView
+        android:id="@+id/txtEEG08"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEEG08"
+        android:layout_alignLeft="@+id/txtEegPower"
+        android:text="@string/egg08_mid_gamma" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtEEG08"
+        android:layout_below="@+id/imgEEG08"
+        android:layout_marginTop="18dp"
+        android:text="TextView" />
+
+</RelativeLayout>

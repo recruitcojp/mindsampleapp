@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="meditation">リラックス度</string>
+    <string name="attention">集中度</string>
+    <string name="blink">瞬きの強さ</string>
+    <string name="esense_meters">脳の状態</string>
+    <string name="eeg_power">脳波の状態</string>
+    <string name="connected">接続中</string>
+    <string name="disconnected">未接続</string>
+    <string name="connecting">接続&#8230;</string>
+    <string name="connect">接続</string><string name="egg01_delta">デルタ波</string>
+    <string name="egg02_theta">シータ波</string>
+    <string name="egg03_low_alpha">アルファ波(Low)</string>
+    <string name="egg04_high_alpha">アルファ波(High)</string>
+    <string name="egg05_low_beta">ベータ波(Low)</string>
+    <string name="egg06_high_beta">ベータ波(High)</string>
+    <string name="egg07_low_gamma">ガンマ波(Low)</string>
+    <string name="egg08_mid_gamma">ガンマ波(Mid)</string>
+    
+</resources>
